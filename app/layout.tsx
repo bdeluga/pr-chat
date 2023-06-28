@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`min-h-screen bg-gradient-to-b from-[#0B132B] to-[#1C2541] ${roboto.className}`}
+        className={`min-h-screen bg-gradient-to-b from-primary to-secondary ${roboto.className}`}
       >
         {children}
       </body>
