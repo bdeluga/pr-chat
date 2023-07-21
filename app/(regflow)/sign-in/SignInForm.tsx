@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
@@ -44,8 +43,8 @@ export function SignInForm() {
   }
 
   return (
-    <div className=" h-screen max-w-sm grid place-items-center mx-auto">
-      <div className="border-2 shadow-2xl flex flex-col p-14  border-secondary rounded-3xl w-full">
+    <div className=" h-screen max-w-xs md:max-w-sm grid place-items-center mx-auto">
+      <div className="border-2 shadow-2xl flex flex-col p-8 md:p-14 border-secondary rounded-3xl w-full">
         <h1 className="text-2xl mb-8 font-bold">Login to your account</h1>
         <ul className="space-y-4">
           <li>
