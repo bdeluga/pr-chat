@@ -1,7 +1,6 @@
-import { faAngleRight, faComments } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
-
+import { Button } from "~/components/ui/button";
+import { ChevronRight } from "lucide-react";
 export default function Home() {
   return (
     <main className="text-white flex flex-col justify-center items-center h-screen bg-[url('/pattern.png')] bg-no-repeat bg-cover">
@@ -15,24 +14,17 @@ export default function Home() {
         </h1>
       </div>
       <div className="mt-12 gap-8 flex font-bold antialiased">
-        <Link
-          href={"sign-in"}
-          className="bg-primary px-4 py-3 rounded-full group inline-flex gap-2 items-center"
-        >
-          <>
-            Get started{" "}
-            <FontAwesomeIcon
-              className="group-hover:translate-x-0.5 duration-200 transition-transform"
-              icon={faAngleRight}
-            />
-          </>
-        </Link>
-        <Link
-          href={"learn"}
-          className="px-4 py-3 transition-colors duration-300 rounded-full bg-white/20 hover:bg-white/30"
-        >
-          Learn more
-        </Link>
+        <Button asChild className="group text-md">
+          <Link href={"sign-in"}>
+            <>
+              Get started
+              <ChevronRight className="group-hover:translate-x-0.5 duration-200 transition-transform" />
+            </>
+          </Link>
+        </Button>
+        <Button asChild variant="ghost" className="text-md">
+          <Link href={"documentation"}>Learn more</Link>
+        </Button>
       </div>
     </main>
   );
