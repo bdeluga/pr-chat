@@ -18,7 +18,7 @@ export default function Home() {
           <Link href={"sign-in"}>
             <>
               Get started
-              <ChevronRight className="group-hover:translate-x-0.5 duration-200 transition-transform" />
+              <ChevronRight className="ml-1 group-hover:translate-x-0.5 duration-200 transition-transform" />
             </>
           </Link>
         </Button>
