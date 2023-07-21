@@ -1,5 +1,3 @@
-import { faStar } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import React from "react";
 
@@ -62,7 +60,7 @@ const Page = () => {
           <button className="bg-green-700 p-2 rounded-md mt-12">Log in</button>
         </form>
         <div className="flex gap-1 mt-4">
-          <span>{"Doesn't have an account? "}</span>
+          <span>{"Don't have an account? "}</span>
           <Link href={"sign-up"} className="text-accent-secondary underline">
             Create one
           </Link>
